@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[scale=.85, margin=.5in]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Pedro}
+\familyname{Rodriguez} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Research Scientist}
+\email{pedro@entilzha.io}
+\homepage{www.entilzha.io}{www.entilzha.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+\vspace{-8ex}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\cventry{August 2015 - Present}
+		{Research Assistant to Jordan Boyd-Graber, PhD Candidate}
+		{University of Maryland at College Park}
+		{Machine Learning, Deep Learning, NLP}
+		{}
+		{
+			\begin{itemize}
+			\item Research experience in machine learning, deep learning, natural language processing, and question answering.
+      \item Created an AI for a trivia game (Quiz Bowl) that beat the best players in the world. \url{https://youtu.be/bYFqMINXayc}
+			\end{itemize}
+		}
+
+\cventry{Summer 2018}
+		{Research Intern}
+		{Microsoft Research - Information and Data Sciences}
+		{Machine Learning, Deep Learning, NLP}
+		{}
+		{
+			\begin{itemize}
+			\item Conversational NLP for machine guided human learning, a work in progress to be published in 2019.
+			\end{itemize}
+		}
+\cventry{Summer 2017}
+		{Data Science Research Intern}
+		{Riot Games}
+		{Machine Learning, NLP, Bayesian Modeling}
+		{}
+		{
+			\begin{itemize}
+			\item Improved NLP model effectiveness for automatically sorting and/or answering 12,000 player support tickets per day.
+			\item Created data labeling process for player support tickets to increase effectiveness and enable incremental future improvement.
+			\item Used Machine Learning ablation studies, Bayesian modeling and Monte Carlo simulations to understand behavior of new sportsmanlike play system called Honor 2.0. This also included querying over 56 million records with Spark SQL.
+			\end{itemize}
+		}
+
+\cventry{Summer 2016}
+		{Data Science Research Intern}
+		{Oracle Data Cloud/Datalogix}
+		{Machine Learning, Data Engineering, DevOps}
+		{}
+		{
+			\begin{itemize}
+			\item Architected and implemented ETL pipeline with Apache Spark/Airflow which ingests 200GB/day of advertising data.
+			\item Improved throughput from AWS S3 to Apache Spark by 40-60x which resulted in substantial cost savings.
+			\end{itemize}
+		}
+
+\cventry{January 2015 - July 2015}
+		{Data Scientist}
+		{Zillow Group/Trulia}
+		{Machine Learning, Crowdsourcing, DevOps}
+		{}
+		{
+			\begin{itemize}
+				\item Designed and iteratively improved crowdsourcing experiments to produce rank order for machine learning generated photo albums. In doing so wrote a Amazon Mechanical Turk library which managed approximately 20,000 tasks.
+				\item Architected and implemented infrastructure for internal data science APIs built on Docker, Swagger, Jenkins, and predominantly Django as a web framework. This code is now called on 100\% of visits to trulia.com.
+			\end{itemize}
+		}
+\cvitem{UC Berkeley AMPLab}{Undergraduate Research Assistant, Fall 2014: Optimized Gibbs LDA on Spark}{}
+\cvitem{Boise State University Geophysics}{Cryosphere Scientist, Field Researcher, May 2013-October 2014}{}
+\cvitem{UC Berkeley Center for Time Domain Informatics}{Undergraduate Researcher in Astrophysics, 2012}{}
+\cvitem{Avalanche Safety Educator}{Volunteer for National Ski Patrol, Professionally in South America, 2010-Present}{}
+\vspace{-2ex}
+\section{Publications}
+\cvitem{}{
+  \begin{itemize}
+    \item Eric Wallace, \textbf{Pedro Rodriguez}, Shi Feng, and Jordan Boyd-Graber. \href{https://arxiv.org/abs/1809.02701}{Trick Me If You Can: Adversarial Writing of Trivia Challenge Questions}. arxiv.org.
+    \item Shi Feng, Eric Wallace, Alvin Grissom II, Mohit Iyyer, \textbf{Pedro Rodriguez}, and Jordan Boyd-Graber. \href{https://arxiv.org/abs/1804.07781}{Pathologies of Neural Models Make Interpretations Difficult}. EMNLP 2018
+    \item Jordan Boyd-Graber, Shi Feng, and \textbf{Pedro Rodriguez}. \href{https://www.entilzha.io/static/publications/2018_nips_qbcomp.pdf}{Human-Computer Question Answering: The Case for Quizbowl. The NIPS '17 Competition: Building Intelligent Systems, 2018}
+  \end{itemize}
+}{}
+
+\vspace{-2ex}
+\section{Projects and Code}
+\cvitem{\href{http://qanta.org}{Qanta.org}}{An NSF funded project for advancing AI question answering by learning to play quiz bowl.}{}
+\cvitem{Tools}{Python Ecosystem (PyTorch, pandas...), SQL, Apache Spark, Scala/Java, HTML/CSS/JS, Tex, Rust}
+
+\vspace{-2ex}
+\section{Education}
+\cventry{Expected Spring 2020}{PhD Candidate in Machine Learning, Deep Learning, and NLP}{University of Maryland at College Park, Computer Science}{}{}{}
+
+\cventry{2010 - 2014}{Bachelor of Arts in Computer Science with coursework in Physics and Astrophysics}{University of California at Berkeley, Computer Science}{}{}{}  % Arguments not required can be left empty
+
+\end{document}
