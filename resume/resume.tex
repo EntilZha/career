@@ -42,8 +42,8 @@
 
 % All information in this block is optional, comment out any lines you don't need
 \title{Research Scientist}
-\email{pedro@entilzha.io}
-\homepage{www.entilzha.io}{www.entilzha.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\email{me@pedro.ai}
+\homepage{www.pedro.ai}{www.pedro.ai} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -54,21 +54,65 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
+\section{Education}
+
+\cventry{2015 - 2021}{Ph.D. in Computer Science}{University of Maryland at College Park}{}{}{Advisor: Jordan Boyd-Graber, \href{https://drum.lib.umd.edu/handle/1903/27958}{Thesis: Evaluating Machine Intelligence with Question Answering}}
+\cventry{2010 - 2014}{Bachelor of Arts in Computer Science with coursework in Physics and Astrophysics}{University of California at Berkeley, Computer Science}{}{}{}  % Arguments not required can be left empty
+
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
+
 \section{Experience}
-\cventry{August 2015 - Present}
+\cventry{April 2021 - Present}
+		{Research Scientist}
+		{Meta Reality Labs}
+		{Natural Language Processing, Multimodal}
+		{}
+		{
+			\begin{itemize}
+				\item Research in improving metrics, datasets, and evaluation methodologies in multimodal retrieval.
+				\item Research in using Item Response Theory to cluster NLP benchmark data.
+				\item Contributed task to Dynabench.org and co-organizer of DADC workshop.
+			\end{itemize}
+		}
+
+\cventry{August 2015 - April 2021}
 		{Research Assistant to Jordan Boyd-Graber, PhD Candidate}
 		{University of Maryland at College Park}
 		{Machine Learning, Deep Learning, NLP}
 		{}
 		{
 			\begin{itemize}
-			\item Research experience in machine learning, deep learning, natural language processing, and question answering.
+			\item Research experience in natural language processing, question answering, and evaluation methodologies.
       \item Created an AI for a trivia game (Quiz Bowl) that beat the best players in the world. \url{https://youtu.be/bYFqMINXayc}
+			\end{itemize}
+		}
+
+		\cventry{Winter 2019/2020}
+		{Research Intern}
+		{Google Research - Zurich}
+		{Question Answering, Fact Verification, NLP}
+		{}
+		{
+			\begin{itemize}
+				\item Investigated feasibility of hard mining in neural retrieval models for fact verification (e.g., FEVER)
+				\item Discovered that due to false negatives, hard mining disrupts model training.
+				\item Open sourced internship code: \href{https://github.com/google-research/language/tree/master/language/serene}{https://github.com/google-research/language/tree/master/language/serene}
+			\end{itemize}
+		}
+
+		\cventry{Summer 2019}
+		{Research Intern}
+		{Facebook Research}
+		{Conversational NLP}
+		{}
+		{
+			\begin{itemize}
+				\item Conversational NLP research project on indirectly measuring ``interestingness'' of Wikipedia facts.
+				\item Published internship project as an EMNLP paper, released open dataset, and open sourced code.
 			\end{itemize}
 		}
 
@@ -79,11 +123,11 @@
 		{}
 		{
 			\begin{itemize}
-			\item Conversational NLP for machine guided human learning, a work in progress to be published in 2019.
+			\item Used search logs to build conversational NLP systems to guide topic exploration.
 			\end{itemize}
 		}
 \cventry{Summer 2017}
-		{Data Science Research Intern}
+		{Data Science Intern}
 		{Riot Games}
 		{Machine Learning, NLP, Bayesian Modeling}
 		{}
@@ -121,26 +165,34 @@
 \cvitem{UC Berkeley AMPLab}{Undergraduate Research Assistant, Fall 2014: Optimized Gibbs LDA on Spark}{}
 \cvitem{Boise State University Geophysics}{Cryosphere Scientist, Field Researcher, May 2013-October 2014}{}
 \cvitem{UC Berkeley Center for Time Domain Informatics}{Undergraduate Researcher in Astrophysics, 2012}{}
-\cvitem{Avalanche Safety Educator}{Volunteer for National Ski Patrol, Professionally in South America, 2010-Present}{}
-\vspace{-2ex}
+\cvitem{Avalanche Safety Educator}{Volunteer for National Ski Patrol, Professionally in South America, 2010-2017}{}
+
 \section{Publications}
 \cvitem{}{
   \begin{itemize}
-    \item Eric Wallace, \textbf{Pedro Rodriguez}, Shi Feng, and Jordan Boyd-Graber. \href{https://arxiv.org/abs/1809.02701}{Trick Me If You Can: Adversarial Writing of Trivia Challenge Questions}. arxiv.org.
+	\item \textbf{Pedro Rodriguez} and Jordan Boyd-Graber. \href{https://aclanthology.org/2021.emnlp-main.758/}{Evaluation Paradigms in Question Answering}. EMNLP 2021.
+	\item \textbf{Pedro Rodriguez}, Joe Barrow, Alexander Hoyle, John P. Lalor, Robin Jia, and Jordan Boyd-Graber. \href{https://aclanthology.org/2021.acl-long.346/}{Evaluation Examples are not Equally Informative: How should that change NLP Leaderboards?} ACL 2021.
+	\item \textbf{Pedro Rodriguez}, Paul Crook, Seungwhan Moon, and Zhiguang Wang. \href{https://aclanthology.org/2020.emnlp-main.655/}{Information Seeking in the Spirit of Learning: a Dataset for Conversational Curiosity}. EMNLP 2020.
+	\item \textbf{Pedro Rodriguez}, Shi Feng, Mohit Iyyer, He He, and Jordan Boyd-Graber. \href{https://arxiv.org/abs/1904.04792}{Quizbowl: The Case for Incremental Question Answering}. ArXiV 2019.
+	\item Tristan Thrush, Kushal Tirumala, Anmol Gupta, Max Bartolo, \textbf{Pedro Rodriguez}, Tariq Kane, William Gaviria Rojas, Peter Mottson, Adina Williams, Douwe Kiela. Dynatask: A Platform for Creating Dynamic AI Benchmark Tasks. Under review.
+	\item Max Bartolo, Hannah Rose Kirk, Tristan Thrush, Katerina Margatina, \textbf{Pedro Rodriguez}, Mimansa Jaiswal, Pontus Stenetorp, Robin Jia, and Douwe Kiela. The First Workshop on Dynamic Adversarial Data Collection (DADC). To occur at NAACL 2022.
+	\item Naveen Raman, \textbf{Pedro Rodriguez}, and Jordan Boyd-Graber. \href{https://openreview.net/forum?id=grMp1hsIbTg}{What more can Entity Linking do for Question Answering?}. NeurIPS 2020 Workshop on Human and Model in the Loop Evaluation and Training Strategies 2020.
+    \item Eric Wallace, \textbf{Pedro Rodriguez}, Shi Feng, and Jordan Boyd-Graber. \href{https://aclanthology.org/Q19-1029/}{Trick Me If You Can: Adversarial Writing of Trivia Challenge Questions}. TACL 2019.
+	\item Denis Peskov, Joe Barrow, \textbf{Pedro Rodriguez}, Graham Neubig, and Jordan Boyd-Graber. \href{http://dx.doi.org/10.21437/Interspeech.2019-3154}{Mitigating Noisy Inputs for Question Answering}. Interspeech 2019.
     \item Shi Feng, Eric Wallace, Alvin Grissom II, Mohit Iyyer, \textbf{Pedro Rodriguez}, and Jordan Boyd-Graber. \href{https://arxiv.org/abs/1804.07781}{Pathologies of Neural Models Make Interpretations Difficult}. EMNLP 2018
     \item Jordan Boyd-Graber, Shi Feng, and \textbf{Pedro Rodriguez}. \href{https://www.entilzha.io/static/publications/2018_nips_qbcomp.pdf}{Human-Computer Question Answering: The Case for Quizbowl. The NIPS '17 Competition: Building Intelligent Systems, 2018}
+	\item Santiago Rodriguez and \textbf{Pedro Rodriguez}. \href{https://arc.lib.montana.edu/snow-science/objects/ISSW2018_P04.4.pdf}{Classification of snow anisotropic surfaces for mountainous terrain with mixed vegetative cover using optical and thermal spectra from Landsat-8}. ISSW 2018.
+	\item Santiago Rodriguez, \textbf{Pedro Rodriguez}, and Bryan Biggs. \href{https://arc.lib.montana.edu/snow-science/objects/ISSW2018_P18.4.pdf}{Ski Touring Bitacora - An innovative approach for trip planning, recording observations, and risk management while traveling in Avalanche terrain}. ISSW 2018.
+	\item \textbf{Pedro Rodriguez}, Santiago Rodriguez, and Julian Carielo. \href{http://arc.lib.montana.edu/snow-science/objects/ISSW14_paper_P4.34.pdf}{The Stability Wheel: An Intuitive and Didactic Decision-Making Framework}. ISSW 2014.
+	\item Santiago Rodriguez, Hans Peter Marshall, and \textbf{Pedro Rodriguez}. \href{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.977.7907&rep=rep1&type=pdf}{Applications of Low Cost and Low Power FMCW Radar in the Characterization of Dry Snow}. ISSW 2014.
+	\item \textbf{Pedro Rodriguez}, Joshua S. Bloom, and Joseph W. Richards. \href{http://adsabs.harvard.edu/abs/2013AAS...22135428R}{Cross Matching MACC and ROSAT: Characterization of Matching and Resulting Class Trends}. AAS Abstracts 2013.
   \end{itemize}
 }{}
 
-\vspace{-2ex}
 \section{Projects and Code}
 \cvitem{\href{http://qanta.org}{Qanta.org}}{An NSF funded project for advancing AI question answering by learning to play quiz bowl.}{}
 \cvitem{Tools}{Python Ecosystem (PyTorch, pandas...), SQL, Apache Spark, Scala/Java, HTML/CSS/JS, Tex, Rust}
 
 \vspace{-2ex}
-\section{Education}
-\cventry{Expected Spring 2020}{PhD Candidate in Machine Learning, Deep Learning, and NLP}{University of Maryland at College Park, Computer Science}{}{}{}
-
-\cventry{2010 - 2014}{Bachelor of Arts in Computer Science with coursework in Physics and Astrophysics}{University of California at Berkeley, Computer Science}{}{}{}  % Arguments not required can be left empty
 
 \end{document}
