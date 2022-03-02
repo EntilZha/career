@@ -30,8 +30,11 @@
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 \usepackage[scale=.85, margin=.5in]{geometry} % Reduce document margins
+\usepackage{color,soul}
+
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\newcommand{\myhref}[2]{\href{#1}{\setulcolor{cyan}\ul{#2}}}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -55,7 +58,7 @@
 
 \section{Education}
 
-\cventry{2015 - 2021}{Ph.D. in Computer Science}{University of Maryland at College Park}{}{}{Advisor: Jordan Boyd-Graber, \href{https://drum.lib.umd.edu/handle/1903/27958}{Thesis: Evaluating Machine Intelligence with Question Answering}}
+\cventry{2015 - 2021}{Ph.D. in Computer Science}{University of Maryland at College Park}{}{}{Advisor: Jordan Boyd-Graber, \myhref{https://drum.lib.umd.edu/handle/1903/27958}{Thesis: Evaluating Machine Intelligence with Question Answering}}
 \cventry{2010 - 2014}{Bachelor of Arts in Computer Science with coursework in Physics and Astrophysics}{University of California at Berkeley, Computer Science}{}{}{}  % Arguments not required can be left empty
 
 
@@ -74,7 +77,7 @@
 			\begin{itemize}
 				\item Research in improving metrics, datasets, and evaluation methodologies in multimodal retrieval.
 				\item Research in using Item Response Theory to interpret NLP benchmark data.
-				\item Contributed a task to Dynabench.org and am a co-organizer of the \href{https://dadcworkshop.github.io/}{DADC workshop}.
+				\item Contributed a task to Dynabench.org and am a co-organizer of the \myhref{https://dadcworkshop.github.io/}{DADC workshop}.
 			\end{itemize}
 		}
 
@@ -92,7 +95,7 @@
 
 		\cventry{Winter 2019/2020}
 		{Research Intern}
-		{Google Research - Zurich}
+		{Google Research - Z\"urich}
 		{Question Answering, Fact Verification, NLP}
 		{}
 		{
@@ -171,22 +174,22 @@
 \section{Publications}
 \cvitem{}{
   \begin{itemize}
-	\item \textbf{Pedro Rodriguez} and Jordan Boyd-Graber. \href{https://aclanthology.org/2021.emnlp-main.758/}{Evaluation Paradigms in Question Answering}. EMNLP 2021.
-	\item \textbf{Pedro Rodriguez}, Joe Barrow, Alexander Hoyle, John P. Lalor, Robin Jia, and Jordan Boyd-Graber. \href{https://aclanthology.org/2021.acl-long.346/}{Evaluation Examples are not Equally Informative: How should that change NLP Leaderboards?} ACL 2021.
-	\item \textbf{Pedro Rodriguez}, Paul Crook, Seungwhan Moon, and Zhiguang Wang. \href{https://aclanthology.org/2020.emnlp-main.655/}{Information Seeking in the Spirit of Learning: a Dataset for Conversational Curiosity}. EMNLP 2020.
-	\item \textbf{Pedro Rodriguez}, Shi Feng, Mohit Iyyer, He He, and Jordan Boyd-Graber. \href{https://arxiv.org/abs/1904.04792}{Quizbowl: The Case for Incremental Question Answering}. ArXiV 2019.
+	\item \textbf{Pedro Rodriguez} and Jordan Boyd-Graber. \myhref{https://aclanthology.org/2021.emnlp-main.758/}{Evaluation Paradigms in Question Answering}. EMNLP 2021.
+	\item \textbf{Pedro Rodriguez}, Joe Barrow, Alexander Hoyle, John P. Lalor, Robin Jia, and Jordan Boyd-Graber. \myhref{https://aclanthology.org/2021.acl-long.346/}{Evaluation Examples are not Equally Informative: How should that change NLP Leaderboards?} ACL 2021.
+	\item \textbf{Pedro Rodriguez}, Paul Crook, Seungwhan Moon, and Zhiguang Wang. \myhref{https://aclanthology.org/2020.emnlp-main.655/}{Information Seeking in the Spirit of Learning: a Dataset for Conversational Curiosity}. EMNLP 2020.
+	\item \textbf{Pedro Rodriguez}, Shi Feng, Mohit Iyyer, He He, and Jordan Boyd-Graber. \myhref{https://arxiv.org/abs/1904.04792}{Quizbowl: The Case for Incremental Question Answering}. ArXiV 2019.
 	\item Tristan Thrush, Kushal Tirumala, Anmol Gupta, Max Bartolo, \textbf{Pedro Rodriguez}, Tariq Kane, William Gaviria Rojas, Peter Mottson, Adina Williams, Douwe Kiela. Dynatask: A Platform for Creating Dynamic AI Benchmark Tasks. Under review.
 	\item Max Bartolo, Hannah Rose Kirk, Tristan Thrush, Katerina Margatina, \textbf{Pedro Rodriguez}, Mimansa Jaiswal, Pontus Stenetorp, Robin Jia, and Douwe Kiela. The First Workshop on Dynamic Adversarial Data Collection (DADC). To occur at NAACL 2022.
-	\item Naveen Raman, \textbf{Pedro Rodriguez}, and Jordan Boyd-Graber. \href{https://openreview.net/forum?id=grMp1hsIbTg}{What more can Entity Linking do for Question Answering?}. NeurIPS 2020 Workshop on Human and Model in the Loop Evaluation and Training Strategies 2020.
-    \item Eric Wallace, \textbf{Pedro Rodriguez}, Shi Feng, and Jordan Boyd-Graber. \href{https://aclanthology.org/Q19-1029/}{Trick Me If You Can: Adversarial Writing of Trivia Challenge Questions}. TACL 2019.
-	\item Denis Peskov, Joe Barrow, \textbf{Pedro Rodriguez}, Graham Neubig, and Jordan Boyd-Graber. \href{http://dx.doi.org/10.21437/Interspeech.2019-3154}{Mitigating Noisy Inputs for Question Answering}. Interspeech 2019.
-    \item Shi Feng, Eric Wallace, Alvin Grissom II, Mohit Iyyer, \textbf{Pedro Rodriguez}, and Jordan Boyd-Graber. \href{https://arxiv.org/abs/1804.07781}{Pathologies of Neural Models Make Interpretations Difficult}. EMNLP 2018
-    \item Jordan Boyd-Graber, Shi Feng, and \textbf{Pedro Rodriguez}. \href{https://www.entilzha.io/static/publications/2018_nips_qbcomp.pdf}{Human-Computer Question Answering: The Case for Quizbowl. The NIPS '17 Competition: Building Intelligent Systems, 2018}
-	\item Santiago Rodriguez and \textbf{Pedro Rodriguez}. \href{https://arc.lib.montana.edu/snow-science/objects/ISSW2018_P04.4.pdf}{Classification of snow anisotropic surfaces for mountainous terrain with mixed vegetative cover using optical and thermal spectra from Landsat-8}. ISSW 2018.
-	\item Santiago Rodriguez, \textbf{Pedro Rodriguez}, and Bryan Biggs. \href{https://arc.lib.montana.edu/snow-science/objects/ISSW2018_P18.4.pdf}{Ski Touring Bitacora - An innovative approach for trip planning, recording observations, and risk management while traveling in Avalanche terrain}. ISSW 2018.
-	\item \textbf{Pedro Rodriguez}, Santiago Rodriguez, and Julian Carielo. \href{http://arc.lib.montana.edu/snow-science/objects/ISSW14_paper_P4.34.pdf}{The Stability Wheel: An Intuitive and Didactic Decision-Making Framework}. ISSW 2014.
-	\item Santiago Rodriguez, Hans Peter Marshall, and \textbf{Pedro Rodriguez}. \href{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.977.7907&rep=rep1&type=pdf}{Applications of Low Cost and Low Power FMCW Radar in the Characterization of Dry Snow}. ISSW 2014.
-	\item \textbf{Pedro Rodriguez}, Joshua S. Bloom, and Joseph W. Richards. \href{http://adsabs.harvard.edu/abs/2013AAS...22135428R}{Cross Matching MACC and ROSAT: Characterization of Matching and Resulting Class Trends}. AAS Abstracts 2013.
+	\item Naveen Raman, \textbf{Pedro Rodriguez}, and Jordan Boyd-Graber. \myhref{https://openreview.net/forum?id=grMp1hsIbTg}{What more can Entity Linking do for Question Answering?}. NeurIPS 2020 Workshop on Human and Model in the Loop Evaluation and Training Strategies 2020.
+    \item Eric Wallace, \textbf{Pedro Rodriguez}, Shi Feng, and Jordan Boyd-Graber. \myhref{https://aclanthology.org/Q19-1029/}{Trick Me If You Can: Adversarial Writing of Trivia Challenge Questions}. TACL 2019.
+	\item Denis Peskov, Joe Barrow, \textbf{Pedro Rodriguez}, Graham Neubig, and Jordan Boyd-Graber. \myhref{http://dx.doi.org/10.21437/Interspeech.2019-3154}{Mitigating Noisy Inputs for Question Answering}. Interspeech 2019.
+    \item Shi Feng, Eric Wallace, Alvin Grissom II, Mohit Iyyer, \textbf{Pedro Rodriguez}, and Jordan Boyd-Graber. \myhref{https://arxiv.org/abs/1804.07781}{Pathologies of Neural Models Make Interpretations Difficult}. EMNLP 2018
+    \item Jordan Boyd-Graber, Shi Feng, and \textbf{Pedro Rodriguez}. \myhref{https://www.entilzha.io/static/publications/2018_nips_qbcomp.pdf}{Human-Computer Question Answering: The Case for Quizbowl. The NIPS '17 Competition: Building Intelligent Systems, 2018}
+	\item Santiago Rodriguez and \textbf{Pedro Rodriguez}. \myhref{https://arc.lib.montana.edu/snow-science/objects/ISSW2018_P04.4.pdf}{Classification of snow anisotropic surfaces for mountainous terrain with mixed vegetative cover using optical and thermal spectra from Landsat-8}. ISSW 2018.
+	\item Santiago Rodriguez, \textbf{Pedro Rodriguez}, and Bryan Biggs. \myhref{https://arc.lib.montana.edu/snow-science/objects/ISSW2018_P18.4.pdf}{Ski Touring Bitacora - An innovative approach for trip planning, recording observations, and risk management while traveling in Avalanche terrain}. ISSW 2018.
+	\item \textbf{Pedro Rodriguez}, Santiago Rodriguez, and Julian Carielo. \myhref{http://arc.lib.montana.edu/snow-science/objects/ISSW14_paper_P4.34.pdf}{The Stability Wheel: An Intuitive and Didactic Decision-Making Framework}. ISSW 2014.
+	\item Santiago Rodriguez, Hans Peter Marshall, and \textbf{Pedro Rodriguez}. \myhref{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.977.7907&rep=rep1&type=pdf}{Applications of Low Cost and Low Power FMCW Radar in the Characterization of Dry Snow}. ISSW 2014.
+	\item \textbf{Pedro Rodriguez}, Joshua S. Bloom, and Joseph W. Richards. \myhref{http://adsabs.harvard.edu/abs/2013AAS...22135428R}{Cross Matching MACC and ROSAT: Characterization of Matching and Resulting Class Trends}. AAS Abstracts 2013.
   \end{itemize}
 }{}
 
@@ -198,20 +201,21 @@
 \section{Skills}
 \cvitem{Tools}{Python Ecosystem (PyTorch, pandas...), SQL, Apache Spark, Scala/Java, HTML/CSS/JS, Tex, Rust}
 \cvitem{Open Source}{Maintained open source projects for 7 years, help users fix issues and review/merge pull requests.}
+\cvitem{Work Authorization}{I am a U.S. Citizen and do need work authorization or visa support.}
 
 \section{Open Source Code}
 
 I have always been a strong advocate for open source software and release software whenever possible.
 \vspace{1ex}
 
-\cvitem{\href{https://github.com/nd-ball/py-irt}{Py-IRT}}{Item Response Theory library written in Python and Pyro.}{}
-\cvitem{\href{https://github.com/facebookresearch/irt-leaderboard}{ACL 2021 IRT Paper}}{Source code for ACL 2021 IRT paper using Py-IRT.}{}
-\cvitem{\href{https://github.com/facebookresearch/curiosity}{EMNLP 2020 Curiosity Paper}}{Source code and dataset for EMNLP 2020 Curiosity paper.}{}
-\cvitem{\href{https://github.com/EntilZha/explorer}{Dataset Viewer}}{Dataset viewer for datasets I've published.}{}
-\cvitem{\href{https://github.com/google-research/language/tree/master/language/serene}{FEVER Fact Verification System}}{System developed during Google Research internship.}{}
-\cvitem{\href{http://qanta.org}{Qanta.org}}{An NSF funded project for advancing AI question answering by learning to play quiz bowl.}{}
-\cvitem{\href{https://github.com/EntilZha/PyFunctional}{PyFunctional}}{Python library for functional pipelines, 7 years old, Over 2K Github stars.}{}
-\cvitem{\href{https://github.com/EntilZha/wikidata-rust}{wikidata-rust}}{Fast Wikidata dump parser written in Rust.}{}
+\cvitem{Py-IRT}{\myhref{https://github.com/nd-ball/py-irt}{Item Response Theory library written in Python and Pyro.}}{}
+\cvitem{ACL 2021 IRT Paper}{\myhref{https://github.com/facebookresearch/irt-leaderboard}{Source code for ACL 2021 IRT paper using Py-IRT.}}{}
+\cvitem{EMNLP 2020 Curiosity Paper}{\myhref{https://github.com/facebookresearch/curiosity}{Source code and dataset for EMNLP 2020 Curiosity paper.}}{}
+\cvitem{Dataset Viewer}{\myhref{https://github.com/EntilZha/explorer}{Dataset viewer for datasets I've published.}}{}
+\cvitem{FEVER Fact Verification System}{\myhref{https://github.com/google-research/language/tree/master/language/serene}{System developed during Google Research internship.}}{}
+\cvitem{Qanta.org}{\myhref{http://qanta.org}{An NSF funded project for advancing AI question answering by learning to play quiz bowl.}}{}
+\cvitem{PyFunctional}{\myhref{https://github.com/EntilZha/PyFunctional}{Python library for functional pipelines, 7 years old, Over 2K Github stars.}}{}
+\cvitem{wikidata-rust}{\myhref{https://github.com/EntilZha/wikidata-rust}{Fast Wikidata dump parser written in Rust.}}{}
 \cvitem{Apache Spark}{Contributed pull requests that added SparkSQL primitives.}{}
 
 
